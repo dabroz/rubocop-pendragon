@@ -3,6 +3,7 @@ plugins:
 - rubocop-rspec
 - rubocop-rspec_rails
 - rubocop-rake
+- rubocop-performance
 AllCops:
   DisplayCopNames: true
   Exclude:
@@ -182,6 +183,44 @@ Naming/PredicatePrefix:
   Enabled: false
 Naming/VariableNumber:
   Enabled: false
+Performance/AncestorsInclude:
+  Enabled: true
+Performance/CollectionLiteralInLoop:
+  Enabled: true
+Performance/ConcurrentMonotonicTime:
+  Enabled: true
+Performance/ConstantRegexp:
+  Enabled: true
+Performance/MapCompact:
+  Enabled: true
+Performance/MapMethodChain:
+  Enabled: true
+Performance/MethodObjectAsBlock:
+  Enabled: true
+Performance/RedundantEqualityComparisonBlock:
+  Enabled: true
+Performance/RedundantSortBlock:
+  Enabled: true
+Performance/RedundantSplitRegexpArgument:
+  Enabled: true
+Performance/RedundantStringChars:
+  Enabled: true
+Performance/ReverseFirst:
+  Enabled: true
+Performance/SortReverse:
+  Enabled: true
+Performance/Squeeze:
+  Enabled: true
+Performance/StringBytesize:
+  Enabled: true
+Performance/StringIdentifierArgument:
+  Enabled: true
+Performance/StringInclude:
+  Enabled: true
+Performance/Sum:
+  Enabled: true
+Performance/ZipWithoutBlock:
+  Enabled: true
 RSpec/BeEmpty:
   Enabled: true
 RSpec/BeEq:
