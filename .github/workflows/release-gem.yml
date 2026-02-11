@@ -2,8 +2,10 @@ name: Release RubyGem
 
 on:
   push:
+    branches:
+      - master
     tags:
-      - "v*"
+      - 'v*.*.*'
 
 permissions:
   contents: read
