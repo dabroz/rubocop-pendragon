@@ -14,11 +14,13 @@ Gem::Specification.new do |s|
   s.version = RubocopPendragon::VERSION
   s.platform = Gem::Platform::RUBY
 
-  s.add_dependency "rubocop", ">= 1.84"
-  s.add_dependency "rubocop-rails", ">= 2.34"
-  s.add_dependency "rubocop-rspec", ">= 3.9"
-  s.add_dependency "rubocop-rspec_rails", ">= 2.32"
-  s.add_dependency "rubocop-rake", ">= 0.7.1"
+  s.add_dependency "rubocop", "~> 1.84"
+  s.add_dependency "rubocop-rails", "~> 2.34"
+  s.add_dependency "rubocop-rspec", "~> 3.9"
+  s.add_dependency "rubocop-rspec_rails", "~> 2.32"
+  s.add_dependency "rubocop-rake", "~> 0.7.1"
+
+  s.required_ruby_version = ">= 3.3.0"
 
   s.files = %w[ rubocop.yml ]
 end
