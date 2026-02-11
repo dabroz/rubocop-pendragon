@@ -4,7 +4,7 @@ require 'rubocop-pendragon'
 
 Gem::Specification.new do |s|
   s.name = "rubocop-pendragon"
-  s.summary = "Pendragon Ruby styling, mostyle for Rails"
+  s.summary = "Pendragon Ruby styling, mostly for Rails"
   s.author = "Thomas Pendragon"
   s.email = "me@thomaspendragon.com"
   s.homepage = "https://github.com/dabroz/rubocop-pendragon"
