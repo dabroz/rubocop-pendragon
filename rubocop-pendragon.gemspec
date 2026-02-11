@@ -1,0 +1,24 @@
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require 'rubocop-pendragon'
+
+Gem::Specification.new do |s|
+  s.name = "rubocop-pendragon"
+  s.summary = "Pendragon Ruby styling, mostyle for Rails"
+  s.author = "Thomas Pendragon"
+  s.email = "me@thomaspendragon.com"
+  s.homepage = "https://github.com/dabroz/rubocop-pendragon"
+
+  s.license = "MIT"
+
+  s.version = RubocopPendragon::VERSION
+  s.platform = Gem::Platform::RUBY
+
+  s.add_dependency "rubocop", ">= 1.84"
+  s.add_dependency "rubocop-rails", ">= 2.34"
+  s.add_dependency "rubocop-rspec", ">= 3.9"
+  s.add_dependency "rubocop-rspec_rails", ">= 2.32"
+  s.add_dependency "rubocop-rake", ">= 0.7.1"
+
+  s.files = %w[ rubocop.yml ]
+end
