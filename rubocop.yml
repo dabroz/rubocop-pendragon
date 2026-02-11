@@ -1,9 +1,11 @@
 plugins:
+- rubocop-capybara
+- rubocop-factory_bot
+- rubocop-performance
 - rubocop-rails
+- rubocop-rake
 - rubocop-rspec
 - rubocop-rspec_rails
-- rubocop-rake
-- rubocop-performance
 AllCops:
   DisplayCopNames: true
   Exclude:
@@ -12,7 +14,46 @@ AllCops:
   - tmp/**/*
   - vendor/**/*
   - lib/tasks/cucumber.rake
+  - node_modules/**/*
   TargetRubyVersion: 3.3
+Capybara/ClickLinkOrButtonStyle:
+  Enabled: true
+Capybara/FindAllFirst:
+  Enabled: true
+Capybara/MatchStyle:
+  Enabled: true
+Capybara/NegationMatcher:
+  Enabled: true
+Capybara/NegationMatcherAfterVisit:
+  Enabled: true
+Capybara/RSpec/HaveSelector:
+  Enabled: true
+Capybara/RSpec/PredicateMatcher:
+  Enabled: true
+Capybara/RedundantWithinFind:
+  Enabled: true
+Capybara/SpecificActions:
+  Enabled: true
+Capybara/SpecificFinders:
+  Enabled: true
+Capybara/SpecificMatcher:
+  Enabled: true
+FactoryBot/AssociationStyle:
+  Enabled: true
+FactoryBot/ConsistentParenthesesStyle:
+  Enabled: true
+FactoryBot/ExcessiveCreateList:
+  Enabled: true
+FactoryBot/FactoryAssociationWithStrategy:
+  Enabled: true
+FactoryBot/FactoryNameStyle:
+  Enabled: true
+FactoryBot/IdSequence:
+  Enabled: true
+FactoryBot/RedundantFactoryOption:
+  Enabled: true
+FactoryBot/SyntaxMethods:
+  Enabled: false
 Gemspec/AddRuntimeDependency:
   Enabled: true
 Gemspec/AttributeAssignment:
