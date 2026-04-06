@@ -751,7 +751,7 @@ Style/FileOpen: # new in 1.85
 Style/MapJoin: # new in 1.85
   Enabled: true
 Style/OneClassPerFile: # new in 1.85
-  Enabled: true
+  Enabled: false
 Style/PartitionInsteadOfDoubleSelect: # new in 1.85
   Enabled: true
 Style/PredicateWithKind: # new in 1.85
