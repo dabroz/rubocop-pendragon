@@ -747,7 +747,7 @@ Lint/DataDefineOverride: # new in 1.85
 Lint/UnreachablePatternBranch: # new in 1.85
   Enabled: true
 Style/FileOpen: # new in 1.85
-  Enabled: true
+  Enabled: false
 Style/MapJoin: # new in 1.85
   Enabled: true
 Style/OneClassPerFile: # new in 1.85

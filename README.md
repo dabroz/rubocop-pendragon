@@ -12,7 +12,7 @@ Add this to your Gemfile:
 
 ```ruby
 group :tools do
-  gem "rubocop-pendragon", "~> 1.3.1", require: false
+  gem "rubocop-pendragon", "~> 1.3.2", require: false
 end
 ```
 
