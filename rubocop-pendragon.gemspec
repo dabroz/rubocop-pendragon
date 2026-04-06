@@ -1,6 +1,6 @@
 lib = File.expand_path("lib", __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "rubocop-pendragon"
+require "rubocop_pendragon"
 
 Gem::Specification.new do |s|
   s.name = "rubocop-pendragon"
@@ -25,6 +25,7 @@ Gem::Specification.new do |s|
 
   s.required_ruby_version = ">= 3.3.0"
 
+  s.require_paths = ["lib"]
   s.files = %w[rubocop.yml]
   s.metadata["rubygems_mfa_required"] = "true"
 end
